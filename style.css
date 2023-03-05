@@ -1,0 +1,413 @@
+:root {
+  --primary: #ffc93c;
+  --bg: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #222831;
+  border-bottom: 1px solid #ff9a3c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #eeeeee;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #eeeeee;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scale(1);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Hero Section */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(img/3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0%;
+  background: linear-gradient(0deg, #222831 2%, rgba(255, 255, 255, 0) 50%);
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+}
+
+.hero .content h1 span {
+  color: var(--primary);
+}
+
+.hero .content p {
+  font-size: 1.6 rem;
+  margin-top: 0.5rem;
+  line-height: 1.4rem;
+  font-weight: 100;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  mix-blend-mode: difference;
+}
+
+.hero .content p {
+  font-size: 1.6 rem;
+  margin-top: 0.5rem;
+  line-height: 1.4rem;
+  font-weight: 100;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  mix-blend-mode: difference;
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px #222831;
+}
+/* Tentang Saya */
+.about {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.about h2 span {
+  color: var(--primary);
+  font-size: 5rem;
+}
+
+.about .row {
+  display: flex;
+}
+
+/* .about .row .about-img {
+  flex: 1 1 2rem;
+} */
+
+.about .row .about-img img {
+  width: 80%;
+  transition: transform 0.5s;
+}
+
+.about .row .about-img img:hover {
+  transform: scale(1.2);
+}
+
+.about .row .content {
+  flex: 1 1 25rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 3rem;
+}
+
+.about .row .content-icon {
+  width: 3rem;
+  height: 3rem;
+  flex-direction: column;
+  color: #eeeeee;
+}
+
+/* SKill */
+
+.skill {
+  padding: 8rem 7% 1.4rem;
+}
+
+.skill h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.skill h2 span {
+  color: var(--primary);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.skill p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.skill .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.skill .row .skill-card {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.skill .row .skill-card img {
+  width: 50%;
+}
+.skill .row .skill-card .skill-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
+/* PROJEK */
+
+.projek {
+  padding: 8rem 7% 1.4rem;
+}
+
+.projek h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projek h2 span {
+  color: var(--primary);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.projek .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.projek .row .projek-card {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.projek .row .projek-card img {
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(14px);
+  border-radius: 5px;
+}
+
+.projek .row .projek-card .projek-card-title {
+  margin: 10rem auto 0.5rem;
+}
+
+.projek .row .projek-card img:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+footer .links a {
+  color: var(--bg);
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover:after {
+    transform: scaleX(0.2);
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 28rem;
+    margin-left: 4rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.6;
+  }
+
+  .menu p {
+    font-size: 1rem;
+  }
+
+  .contact .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .row .map {
+    height: 30rem;
+  }
+
+  .contact .row form {
+    padding-top: 0;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather-icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Typed js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+    <title>Portofolio</title>
+  </head>
+  <body>
+    <!-- Navbar awal -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Time<span>Cod3</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Saya</a>
+        <a href="#skill">Skill</a>
+        <a href="#projek">My Project</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="https://www.instagram.com/yovie_ferdianto/" id="instagram"
+          ><i data-feather="instagram"></i>
+        </a>
+        <a href="https://github.com/timecod3/" id="github"
+          ><i data-feather="github"></i>
+        </a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i> </a>
+      </div>
+    </nav>
+    <!-- Navbar akhir -->
+
+    <!-- Hero Section Awal -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Hi,</h1>
+        <h1>I'am <span>Yovie Ferdianto</span></h1>
+        <p>
+          <span id="typed"></span>
+        </p>
+        <a href="https://wa.me/+625745285983" class="cta">Hire Me</a>
+      </main>
+    </section>
+    <!-- Hero Section Awal -->
+
+    <!-- Tentang Saya Awal -->
+    <section id="about" class="about">
+      <h2><span>Tentang Saya</span></h2>
+      <div class="row">
+        <div class="content" data-aos="fade-left">
+          <h3><i data-feather="home"></i> Kediri, 11 April 2002</h3>
+          <h3>
+            <i data-feather="map"></i> Plaosan, Kec.Wates, Kab.Kediri Jawa Timur
+            64174
+          </h3>
+          <h3><i data-feather="mail"></i> yovieferdiantoo@gmail.com</h3>
+        </div>
+        <div class="about-img" data-aos="zoom-in-right">
+          <img src="img/saya2.png" alt="Tentang Kami" />
+        </div>
+      </div>
+    </section>
+    <!-- Tentang Saya Akhir -->
+
+    <!-- Skill Awal -->
+    <section id="skill" class="skill">
+      <h2><span>Skill</span> Saya</h2>
+      <p>
+        Saya memiliki beberapa ketrampilan dari sekolah,kampus, maupun otodidak.
+        ada beberapa skill yang saya miliki.
+      </p>
+
+      <div class="row">
+        <div class="skill-card" data-aos="flip-left">
+          <img src="img/html.png" alt="HTML" class="skill-card-img" />
+          <h3 class="skill-card-title">- HTML-</h3>
+          <p class="skill-card-price">High</p>
+        </div>
+
+        <div class="skill-card" data-aos="flip-left">
+          <img src="img/css.png" alt="CSS" class="skill-card-img" />
+          <h3 class="skill-card-title">- CSS-</h3>
+          <p class="skill-card-price">Medium</p>
+        </div>
+        <div class="skill-card" data-aos="flip-left">
+          <img src="img/php.png" alt="PHP" class="skill-card-img" />
+          <h3 class="skill-card-title">- PHP-</h3>
+          <p class="skill-card-price">Beginner</p>
+        </div>
+        <div class="skill-card" data-aos="flip-right">
+          <img src="img/js.png" alt="JAVASCRIPT" class="skill-card-img" />
+          <h3 class="skill-card-title">- JAVASCRIPT-</h3>
+          <p class="skill-card-price">Beginner</p>
+        </div>
+        <div class="skill-card" data-aos="flip-right">
+          <img src="img/boostrap.png" alt="BOOSTRAP" class="skill-card-img" />
+          <h3 class="skill-card-title">- BOOSTRAP-</h3>
+          <p class="skill-card-price">Beginner</p>
+        </div>
+        <div class="skill-card" data-aos="flip-right">
+          <img src="img/pentes.png" alt="PENTESTING" class="skill-card-img" />
+          <h3 class="skill-card-title">- PENTESTING WEBSITE-</h3>
+          <p class="skill-card-price">Medium</p>
+        </div>
+      </div>
+    </section>
+    <!-- Skill Akhir -->
+
+    <!-- PROJEK Awal -->
+    <section id="projek" class="projek">
+      <h2><span>Projek</span> Saya</h2>
+
+      <div class="row">
+        <div class="projek-card" data-aos="fade-right">
+          <img src="img/projek.png" alt="HTML" class="projek-card-img" />
+          <h3 class="menu-card-title">- Portofolio diri -</h3>
+        </div>
+
+        <div class="projek-card" data-aos="fade-left">
+          <img src="img/projek-1.png" alt="HTML" class="projek-card-img" />
+          <h3 class="menu-card-title">- Kopi Kenangan Senja-</h3>
+        </div>
+      </div>
+    </section>
+    <!-- PROJEK Akhir -->
+
+    <!-- Footer Awal -->
+    <footer>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#skill">Skill</a>
+        <a href="#projek">My Project</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Yovie Ferdianto</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer Akhir -->
+
+    <!-- Javascript-->
+    <!-- Feateher-icon -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- text header animation -->
+    <script>
+      new Typed("#typed", {
+        strings: ["Saya adalah seorang junior web developer"],
+        typeSpeed: 40,
+        delaySpeed: 90,
+        loop: true,
+      });
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
+    <!-- My Javascript -->
+    <script src="script.js"></script>
+    <!-- Javascript-->
+  </body>
+</html>
